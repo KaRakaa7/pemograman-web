@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Latihan Mandiri</title>
+        <title>Header Include</title>
     </head>
     <body>
         <div class="header">
@@ -9,5 +9,3 @@
             <i>Latihan Include Dan Require</i>
             <hr/>
         </div>
-    </body>
-</html>
