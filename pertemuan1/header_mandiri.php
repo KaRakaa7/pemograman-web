@@ -1,6 +1,6 @@
 <div class="header">
-<nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color : #e3f2fd;">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="img/logotoko.png" alt="Logo Toko" width="50px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Cari</button>
+              <button class="btn btn-outline-primary" type="submit">Cari</button>
             </form>
           </div>
         </div>

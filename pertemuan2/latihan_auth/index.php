@@ -3,7 +3,7 @@ session_start();
 
 $database = [
     'username' => 'raka',
-    'password' => 'login123'
+    'password' => 'login1122'
 ];
 
 if(isset($_POST[submit])){

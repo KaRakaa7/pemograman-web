@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
-<body background="https://www.cycent.co.id/wp-content/uploads/2020/09/4186340-scaled.jpg" style="background-repeat: no-repeat;  background-size: cover;">
+<body>
 
 <?php
     include "header_mandiri.php";
