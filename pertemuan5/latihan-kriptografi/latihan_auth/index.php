@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-include_once('config.php');
-
 $username = $_POST['username'];
+
+include_once('config.php');
 
 
 $query = mysqli_query($conn_db,"SELECT * FROM users WHERE username='$username'");
@@ -15,12 +15,12 @@ if(isset($_POST['submit'])){
 
     if($username == $user['username'] && password_verify($_POST['password'], $user['password'])){
         $_SESSION['username'] = $username;
-        header("location:admin.php");
+        header("Location:admin.php");
     }else{
         echo '<script> alert("Username atau Password salah ! ");
         window.location="login-page.php"; </script>';
     }
 }else{
-    echo '<script> window.location="register.php"; </script>';
+    echo '<script> window.location="login-page.php"; </script>';
 }
 ?>
