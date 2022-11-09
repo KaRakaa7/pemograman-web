@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 
     include_once("config.php");
 
-    $result = mysqli_query($conn_db, "INSERT INTO users(username,gender,email,password,created_at) VALUES ('$username','$gender','$password','$created')");
+    $result = mysqli_query($conn_db, "INSERT INTO users(username, gender, email,password, created_at) VALUES ('$username','$gender', '$email', '$password','$created')");
 
     echo "Users " . $username . " added successfully. <a href='login-page.php'>Login</a>";
 
