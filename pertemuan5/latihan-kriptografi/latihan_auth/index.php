@@ -1,14 +1,15 @@
 <?php
 session_start();
 
-$username = $_POST['username'];
-
 include_once('config.php');
 
-$query = mysqli_query($conn_db, "SELECT * FROM users WHERE username='$username'");
+$username = $_POST['username'];
+
+
+$query = mysqli_query($conn_db,"SELECT * FROM users WHERE username='$username'");
 $user = mysqli_fetch_assoc($query);
 
-if(isset($_POST[submit])){
+if(isset($_POST['submit'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -20,6 +21,6 @@ if(isset($_POST[submit])){
         window.location="login-page.php"; </script>';
     }
 }else{
-    echo '<script> window.location="login-page.php"; </script>';
+    echo '<script> window.location="register.php"; </script>';
 }
 ?>

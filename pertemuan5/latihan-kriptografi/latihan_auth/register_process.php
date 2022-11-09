@@ -13,11 +13,11 @@ if(isset($_POST['submit'])){
 
     $result = mysqli_query($conn_db, "INSERT INTO users(username,gender,email,password,created_at) VALUES ('$username','$gender','$password','$created')");
 
-    echo "Users " . $username . " added succesfully. <a href='login-page.php'>Login</a>";
+    echo "Users " . $username . " added successfully. <a href='login-page.php'>Login</a>";
 
     if($result){
         header( "refresh:5;url=login-page.php" );
-        echo 'Success Register, You will be redirected to login Page in 5 secs.';
+        echo 'Success Register, You will be redirected to Login Page in 5 secs.';
     }
 }
 ?>
